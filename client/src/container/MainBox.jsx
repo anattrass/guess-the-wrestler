@@ -30,8 +30,8 @@ var MainBox = React.createClass({
 
     return {
       wrestlerArray: wrestlerArray,
-      characters: ["select","CM Punk", "John Morrison", "Kane", "Ryback", "Sheamus", "Y2J", "Yoshi Tatsu", "Zack Ryder"],
-      questions: ["select","has long hair?", "has a head band?", "has a tattoo?", "has a beard?", "wears a mask?", "wears facepaint?"],
+      characters: ["CM Punk", "John Morrison", "Kane", "Ryback", "Sheamus", "Y2J", "Yoshi Tatsu", "Zack Ryder"],
+      questions: ["has long hair?", "has a head band?", "has a tattoo?", "has a beard?", "wears a mask?", "wears facepaint?"],
       chosen: null,
       chosenObject: null,
       focusCharacter: null
@@ -40,7 +40,7 @@ var MainBox = React.createClass({
 
   generateChosen: function(){
     var randomIndex = Math.floor((Math.random() * this.state.characters.length) + 1)
-    var chosenCharacter = this.state.characters[randomIndex +1];
+    var chosenCharacter = this.state.characters[randomIndex];
     this.setState({chosen: chosenCharacter});
     var chosenCharacterObject = this.state.wrestlerArray[randomIndex]
     this.setState({chosenObject: chosenCharacterObject});
@@ -104,9 +104,9 @@ var MainBox = React.createClass({
       <div className = "info-box">
       <h1>Who's Clothesline is it anyway?</h1>
       <QuestionSelector className="question-selector" questions = {this.state.questions} wrestlerArray = {this.state.wrestlerArray} chosen = {this.state.chosen} chosenObject = {this.state.chosenObject}/>
+      <Board turn = {this.turn} wrestlerArray = {this.state.wrestlerArray} />
       <WrestlerSelector className="wrestler-selector" characters = {this.state.characters} chosen = {this.state.chosen} selectCharacter = {this.setFocusCharacter} check = {this.checkGuess} wrestlerArray = {this.state.wrestlerArray}/>
       <div className ="board-box">
-      <Board turn = {this.turn} wrestlerArray = {this.state.wrestlerArray} />
       </div>
       </div>
       );

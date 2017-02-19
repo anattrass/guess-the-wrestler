@@ -14,7 +14,7 @@ var QuestionSelector = React.createClass({
     console.log("wrestlerArray: ", this.props.wrestlerArray);
 
 
-    if(newIndex == 1){
+    if(newIndex == 0){
       for (var wrestler of this.props.wrestlerArray){
         console.log(wrestler.longHair);
         if(wrestler.longHair === this.props.chosenObject.longHair){
@@ -22,7 +22,7 @@ var QuestionSelector = React.createClass({
           console.log("answer:", this.state.answer);
         }
       }
-    }else if(newIndex == 2){
+    }else if(newIndex == 1){
       for (var wrestler of this.props.wrestlerArray){
         console.log(wrestler.headBand);
         if(wrestler.headBand === this.props.chosenObject.headBand){
@@ -30,7 +30,7 @@ var QuestionSelector = React.createClass({
           console.log("answer:", this.state.answer);
         }
       }
-    }else if(newIndex == 3){
+    }else if(newIndex == 2){
       for (var wrestler of this.props.wrestlerArray){
         console.log(wrestler.tattoo);
         if(wrestler.tattoo === this.props.chosenObject.tattoo){
@@ -38,7 +38,7 @@ var QuestionSelector = React.createClass({
           console.log("answer:", this.state.answer);
         }
       }
-    }else if(newIndex == 4){
+    }else if(newIndex == 3){
       for (var wrestler of this.props.wrestlerArray){
         console.log(wrestler.beard);
         if(wrestler.beard === this.props.chosenObject.beard){
@@ -46,7 +46,7 @@ var QuestionSelector = React.createClass({
           console.log("answer:", this.state.answer);
         }
       }
-    }else if(newIndex == 5){
+    }else if(newIndex == 4){
       for (var wrestler of this.props.wrestlerArray){
         console.log(wrestler.mask);
         if(wrestler.mask === this.props.chosenObject.mask){
@@ -54,7 +54,7 @@ var QuestionSelector = React.createClass({
           console.log("answer:", this.state.answer);
         }
       }
-    }else if(newIndex == 6){
+    }else if(newIndex == 5){
       for (var wrestler of this.props.wrestlerArray){
         console.log(wrestler.facePaint);
         if(wrestler.facePaint === this.props.chosenObject.facePaint){
@@ -74,7 +74,7 @@ var QuestionSelector = React.createClass({
     return(
       <div className = "answer">
       <p> Pick a maneuver:
-      <select id = "questions" value = {this.state.selectedIndex} onChange = {this.handleChange}> {options} </select>
+      <select id = "questions" value = {this.state.selectedIndex} onChange = {this.handleChange}><option selected disabled>Choose here</option> {options} </select>
       </p>
 
       <h2>{this.state.answer}</h2>

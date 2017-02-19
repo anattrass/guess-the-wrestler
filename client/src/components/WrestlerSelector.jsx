@@ -29,7 +29,7 @@ var CharacterSelector = React.createClass({
     return(
       <div className = "check-area">
       <p>Guess Who:
-      <select id = "characters" value = {this.state.selectedIndex} onChange = {this.handleChange}> {options} </select>
+      <select id = "characters" value = {this.state.selectedIndex} onChange = {this.handleChange}><option selected disabled>Choose here</option> {options} </select>
       </p>
       <h2>{this.state.win}</h2>
       </div>

@@ -5,9 +5,11 @@
 
 body{
   font-family: wwe;
-  background-image: url("../resources/background.png");
+  background-image: url("../resources/logo.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 180px;
+  background-position: top-left;
+  background-color: black;
 }
 
 input{
@@ -67,24 +69,35 @@ input{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  margin-top: 30px;
 }
 
+
+
 h1{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size: 40px; 
+  margin-bottom: 30px;
+  font-size: 50px; 
   color: tomato;
 }
 
 h2{
   color:white;
+  margin-bottom: 10px;
 }
 
 p{
-  color: black;
-  font-size: 30px;
+  color: white;
+  font-size: 20px;
   border-width: 5px;
   border-color: white;
+}
+
+select {
+   color: tomato;
+   border: 1px solid #ccc;
+   font-size: 16px;
+   height: 34px;
+   width: 268px;
+   margin-bottom: -10px;
 }
 
