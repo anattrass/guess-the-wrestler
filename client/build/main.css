@@ -1,0 +1,90 @@
+@font-face {
+    font-family: wwe;
+    src: url("../resources/wweFont.otf");
+}
+
+body{
+  font-family: wwe;
+  background-image: url("../resources/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input{
+  width: 100px;
+  font-size: 0%;
+  margin: 50px;
+}
+
+.answer{
+  height: 40px;
+  width: 500px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.block{
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.button{
+  background-color: tomato;
+  border-radius: 5px;
+  border: solid gray 1px;
+  padding: 10px;
+  width: 120px;
+  height: 200px;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-box{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+
+}
+
+.board{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+h1{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 40px; 
+  color: tomato;
+}
+
+h2{
+  color:white;
+}
+
+p{
+  color: black;
+  font-size: 30px;
+  border-width: 5px;
+  border-color: white;
+}
+

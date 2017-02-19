@@ -1,0 +1,6 @@
+{
+    "name": "ghibli-guesswho",
+    "description": "homework guess who task",
+    "repository": "git@github.com:winnie-ho/170217_hw_ghibli_guess_who.git" ,
+    "keywords": "["node", "express", "static"]",
+}
